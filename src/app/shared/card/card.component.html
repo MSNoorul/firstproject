@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="img">
+        <img style="width: 100%;border-radius: 10px;"
+         src="../../../assets/courses/courses-01.jpg" alt="">
+    </div>
+    <div style="display:flex;justify-content: space-between;
+    align-items: center;margin-top: 10px;" >
+
+        <div style="display:flex;align-items: center;gap: 5px;">
+            <img style="width: 40px;height: 40px;border-radius: 50%;" 
+            src="../../../assets/authors/author-01.jpg" alt="" >
+            <p style="color:rgba(61, 61, 61, 0.551);font-size: 12px;font-weight: bold;">Json Wilums</p>
+        </div>
+
+        <div>
+            <button style="color:var(--dark-emirat);padding: 8px;border-radius: 10px;
+            background-color: var(--light-emirat);border: none;">Science</button>
+        </div>
+
+    </div>
+
+    <div >
+        <h5 style="margin: 10px 0px;color: rgb(62, 62, 62);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h5>
+    </div>
+
+    <app-course-footer *ngIf="type == 'C'"></app-course-footer>
+    <app-blog-footer *ngIf="type == 'B'"></app-blog-footer>
+    
+</div>

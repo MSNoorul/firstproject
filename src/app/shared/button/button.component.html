@@ -1,0 +1,8 @@
+<button class="btn 
+{{hover=='R'&&shade=='light'?  'hover2':
+  hover=='R'&&shade=='dark'?   'hover1':
+  hover=='R'&&shade=='medium'? 'hover1':
+  hover=='R'&&shade=='white'?  'hover2':
+  hover=='C'&&shade=='dark'?   'hover3':
+  shade=='NA'?'':'hover4'}} " 
+[ngClass]="[size,shade]">{{name}}</button>

@@ -1,0 +1,81 @@
+<nav class="sidenav {{isSidenav?'':'hide'}}">
+
+    <div class="Lside">
+
+        <div class="close-btn" (click)="close()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+
+        <div>
+            <div class="Sphone">
+                <app-phone></app-phone>
+            </div>
+
+            <div class="Semail">
+                <app-email></app-email>
+            </div>
+
+            <div class="Sathu">
+                <app-athu-links></app-athu-links>
+            </div>
+            
+            <div class="Smenu">
+                <app-menu></app-menu>
+            </div>
+            
+            <div class="Ssocial">
+                <app-social-links></app-social-links>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="Rside" (click)="close()">
+
+    </div>
+
+</nav>
+<header class="header">
+
+    <div class="topstrip">
+        <ul class="topitems container m-a">
+            <li>All Project 38% Off <span class="span">Liberian People’s</span></li>
+            <li>
+                <img src="../assets/shapes/shape-1.webp" alt="">
+            </li>
+            <li>
+                <app-phone></app-phone>
+            </li>
+            <li>
+                <app-email></app-email>
+            </li>
+            <li><img src="../assets/shapes/shape-2.webp" alt=""></li>
+            <li>
+                <app-social-links></app-social-links>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-container">
+        <div class="{{isScrolled?'fixed-nav':'nav container'}}" id="demo">
+            <a>
+                <img src="../assets/logo.png" alt="">
+            </a>
+            <div class="toggle-btn" (click)="open()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                </svg>
+            </div>
+            <app-menu class="Lmenu"></app-menu>
+            <app-athu-links class="Lathu"></app-athu-links>
+
+        </div>
+
+    </div>
+
+</header>
+<router-outlet></router-outlet>

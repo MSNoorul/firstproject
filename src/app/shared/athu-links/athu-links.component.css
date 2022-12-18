@@ -1,0 +1,10 @@
+.btn{display: flex;gap: 10px;font-weight: 600;opacity: 0.8;
+    color: black;margin-right: 30px;text-transform: capitalize;}
+.btn a{font-weight: 600;opacity: 0.8; color: black;}
+#fbtn{display: block;}
+#sbtn{display: none;}
+@media (max-width:950px){
+    .btn {justify-content: center;margin-right: 0;}
+    #fbtn{display: none;}
+    #sbtn{display: block;}
+}

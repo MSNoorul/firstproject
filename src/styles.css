@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --mint1: #b4f8c8;
+    --shadow:0px 10px 10px rgba(0,0,0,0.2);
+    
+    --light-emirat:rgb(233, 255, 239);
+    --dark-emirat:rgb(8, 148, 50);
+    --mediam-emirat:rgb(11, 179, 70);
+
+    --lightbalck:rgb(32, 32, 32);
+    --light-gray:rgba(61, 61, 61,0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.container{
+    width: 100%;
+}
+@media  (min-width:640px) {
+    .container{max-width: 850px;}
+}
+.m-a{
+    margin: 0 auto;
+}

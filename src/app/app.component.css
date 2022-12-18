@@ -1,0 +1,59 @@
+
+
+.header {position: absolute;width: 100%;z-index: 10;}
+
+/* top black strip style  */
+.topstrip{background-color: rgb(28, 28, 28);
+color: white;padding: 2px;font-size: small;}
+.topitems{display: flex;justify-content: space-between;align-items: center;}
+.span{color: var(--dark-emirat);}
+
+@media (max-width:1024px) { /*  to hide topstipe*/
+    .topstrip{display: none;}
+}
+
+/* nav bar style  */
+
+.nav{margin: 30px auto 10px;display: flex;border: 1px solid rgba(98, 239, 192, 0.5);
+border-radius: 10px;padding: 5px 20px;align-items: center;justify-content: space-between;
+}
+.nav-container{padding: 0 40px;}
+
+.fixed-nav{display: flex;position: fixed;top: 0;left:0;box-shadow: var(--shadow);
+justify-content: space-between;align-items: center;background-color: white;
+padding: 10px 50px;width: 100%;animation: slidedown .5s ;z-index: 12;}
+@keyframes slidedown {
+    0%{margin-top: -50px};
+    100%{margin-top: 0px}
+}
+
+ /* .toggle-btn style  */
+
+.toggle-btn{display: none;margin-right: 20px;}
+.toggle-btn svg{height: 20px;}
+
+@media (max-width:950px) { /*  to menu c athu c toggle btn*/
+    .Lmenu,.Lathu{display: none;}
+    .toggle-btn{display: block;}
+    
+}
+
+
+/* side nav style  */
+
+.sidenav{display: flex;width: 100%;height: 100vh;
+position: absolute;z-index: 20;}
+.Lside{background-color: white;width: 100%;}
+.close-btn{display: flex;justify-content: flex-end;padding: 20px;}
+.close-btn svg{height: 32px;}
+.Rside{background-color: rgba(22, 22, 22, 0.5);flex-grow: 1;}
+@media (min-width:700px) {
+    .Lside{background-color: white;width: 384px;}
+    
+}
+.Semail,.Sathu,.Smenu{margin-top: 10px;}
+.Ssocial{margin-top: 30px;}
+.hide {
+    display: none;
+}
+

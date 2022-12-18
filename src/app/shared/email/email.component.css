@@ -1,0 +1,7 @@
+.email {display: flex;gap: 3px;}
+.email a {color: white;}
+svg{height: 16px;color: rgb(5, 139, 94);}
+@media (max-width:950px){
+    .email,.email a{color: black;}
+    .email {justify-content: center;}
+}

@@ -1,0 +1,5 @@
+.card{border: 1px solid rgb(238, 238, 238);padding: 10px;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;}
+
+.card:hover{border-color: rgb(3, 135, 91);}

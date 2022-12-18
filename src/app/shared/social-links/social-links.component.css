@@ -1,0 +1,7 @@
+.social-icon {display: flex;gap: 3px;text-transform: capitalize;}
+.social-icon a{color: white;}
+svg {height: 20px;}
+@media (max-width:950px){
+    .social-icon a{color: black;}
+    .social-icon {justify-content: center;}
+}
